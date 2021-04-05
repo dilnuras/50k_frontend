@@ -1,0 +1,310 @@
+/*Базовые настройки страницы*/
+   * {
+       box-sizing: border-box;
+   }  
+   body,p {
+       margin: 0;
+   }
+/*Конец базовых настроек страницы*/
+
+/*Универсальные стили*/
+.left, .ul_li > li{
+    /*>- это стрелочка означает,что обращение будет происходить только для родительских элементов*/
+    float: left;
+}
+.right{
+    float: right;
+}
+.ul_li {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.ul_li li{
+    padding: 10px 15px;
+
+}
+.bo li{
+    border-right: 1px solid #dadada;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+.red {color: red;}
+.orange{color: yellow;}
+.blue {color: blue;}
+.seryi{color: rgb(172, 170, 170);}
+
+.dropdown_menu{
+    display: none ;
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    width: 100%;
+    top: 42px;
+    left: 0;
+}
+
+.hover_menu li:hover .dropdown_menu{
+     display: block;
+}
+.dnone{
+    display:none ;
+}
+.bg_orange{
+    background: #ffcc33;
+}
+.bg_green{
+    background: green;
+}
+.bg_blue{
+    background: blue;
+}
+.bg_red{
+    background: red;
+}
+/*Конец универсальных стилей*/
+
+/*Стили для страницы*/
+/*Урок14*/
+ .vm{
+     background-color: #f7f7f7;
+     display: inline-block;
+     width: 100%;
+ }
+  .vm .ul_li i{
+     margin-right: 10px;
+ }
+ .bo li:last-child{
+     border-right: 0;
+ }
+ .msg {
+     position: absolute;
+     top: -7px;
+     right: 8px;
+     background: red;
+     width: 13px;
+     height: 13px;
+     text-align: center;
+     color: white;
+     font-size: 9px;
+     line-height: 1.5;
+     border-radius: 13px;
+ }
+ .icon_msg {
+     position: relative;
+ }
+   /*centralnoe menu urok16*/
+.center_menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.seryi_krug{
+    background: #ececec;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5;
+    border-radius:20px; 
+    color:#4c4b6c ;
+}
+.jeltyi_krug{
+    background: #f3b60d;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5;
+    border-radius:20px; 
+    color:#4c4b6c ;
+}
+
+.center_menu .right > p:first-child {
+    font-weight: bold;
+    color: #4c4b6c;
+}
+.center_menu .right >p {
+    color: #ababab;
+}
+/*nijnee menu*/
+.nijnee_menu{
+    display: inline-block;
+    width: 100%;
+    background: #f7f7f7;
+    position: relative;
+}
+.nijnee_menu .ul_li li {
+    height: inherit;
+    line-height: 2;
+}
+.poisk{
+    width: 50%;
+}
+.search-box{
+    background: #fff;
+    border-radius: 25px;
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+.search-home-1 {
+    margin-left: 22%;
+    padding: 7px 15px;
+    transform: translateY(4px);
+}
+.search-box input {
+border: none;
+background: transparent;
+width: 195px;
+padding: 10px;
+font-family: roboto;
+}
+/*Urok17*/
+    .block_title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    #product{
+        padding: 15px;
+    }
+    .body_block{
+        margin-top: 20px;
+       /* display: inline-block;*/
+    }
+    .list_product > .product {
+        float: left;
+    }
+    .block_stars{
+        display: inline-block;
+    }
+    .block_stars > div {
+        
+        float: left;
+    }
+/*product style*/
+        .product {
+            display: inline-block;
+            min-height:310px ;
+        }
+        .product img {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            object-fit: contain;
+        }
+        .body_product{
+            margin-top: 10px;
+        }
+
+        .stars > i {
+            color: #ffcc33;
+            font-size: 10px;
+            margin-left: -4px;
+        }
+        .stars {
+            margin-right: 5px;
+        }
+        .stars > i:first-child {
+            margin-left: 0;
+        }
+        .reviews {
+            font-size: 13px;
+            line-height: 1.7;
+        }
+        .price {
+            display: inline-block;
+            width: 100%;
+            margin-top: -5px;
+        }
+        .price span {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4c4b6c;
+        }
+        .price del {
+            font-size: 15px;
+            margin-left: 12px;
+            color: #9e9e9e;
+            line-height: 2;
+        }
+
+        .btns li{
+            padding: 0;
+        }
+        .btns .ul_li{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .btns .seryi_krug{
+            transition: .5s;
+        }
+        .btns li:hover .seryi_krug 
+        {
+            background: #7cd0f5;
+            color: white;
+            cursor: pointer;
+        }
+
+       
+        .img{
+            position: relative;
+        }
+        .desc_img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #ffffffb5;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #dcdcdcb5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: .2s;
+        }
+        .desc{
+            width: 80%;
+            text-align: center;
+        }
+        .ttl {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .product:hover .dnone {
+            display: block;
+        }
+        .product:hover .block_stars {
+            display: none;
+        }
+        .product:hover .desc_img {
+            opacity: 1;
+        }
+        .list_product {
+            display: flex;
+            justify-content: space-between;
+        }
+        .tooltip{
+            position: absolute;
+            right: -7px;
+            top: 7px;
+           
+            color: white;
+            padding: 3px 6 px;
+            font-size: 13px;
+            border-radius: 4px;
+            z-index: 1;
+        }
+/*Конец стилей для страницы*/

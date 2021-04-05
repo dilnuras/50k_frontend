@@ -1,0 +1,51 @@
+/*Базовые настройки страницы*/
+   * {
+       box-sizing: border-box;
+   }  
+   body{
+       margin: 0;
+   }
+/*Конец базовых настроек страницы*/
+
+/*Универсальные стили*/
+.left, .ul_li li{
+    float: left;
+}
+.right{
+    float: right;
+}
+.ul_li {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.ul_li li{
+    padding: 10px 15px;
+    border-right: 1px solid black;
+
+}
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*Конец универсальных стилей*/
+
+/*Стили для страницы*/
+/*Урок14*/
+ .vm{
+     background-color: #f7f7f7;
+     display: inline-block;
+     width: 100%;
+ }
+ .ul_li i {
+     margin-right: 10px;
+ }
+
+ /*Position*/
+ 
+/*Конец стилей для страницы*/
+
+/* второй блок*/

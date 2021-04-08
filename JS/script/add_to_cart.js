@@ -21,7 +21,7 @@
 // attribut
 // tag
 
-// .class - document.getElementsByClassName - Внутри документа получить элементы           по       названию класса
+// .class - document.getElementsByClassName - Внутри документа получить элемент
 //          вкладка
 //          (.) связка
 //          get - получить
@@ -34,5 +34,8 @@
 //Результат ничего не выелось
 //Без команды вывода ничего не выведится!
 
-let ttl = document.getElementsByClassName("ttl");
-  console.log    (ttl[1].innerText);
+//let ttl = document.getElementsByClassName("ttl");
+  //console.log    (ttl[1].innerText);
+
+let pri = document.getElementsByClassName("price");
+console.log (pri[3].innerText);

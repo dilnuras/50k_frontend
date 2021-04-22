@@ -32,7 +32,9 @@
     width: 1200px;
     margin: 0 auto;
 }
-
+.fa-chevron-down{
+    font-size: 8px;
+}
 .m-l-10 {
     margin-left: 10px;
 }
@@ -48,12 +50,19 @@ a {
     background:white;
     width: 100%;
     height: 100%; 
+    z-index: 9;
    
 }
+/* .some_class,
+.product_class,
+.sale_class,
+.blogs_class{
+    padding: 30px;
+} */
 .some_class {
     display: none;
     position: absolute;
-    background:transparent;
+    /*background:transparent;*/
     height: 230px;
     width: 200px;
     left: 0;
@@ -64,14 +73,71 @@ a {
 .product_class {
     display: none;
     position: absolute;
-    background:transparent;
-    height: 400px;
+    /* background-image: url(../img/img100.jpg);  */
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
     width: 800px;
-    left: -120px;
     top: 100%;
     padding-top: 12px;
     z-index: 99;
 }
+.product_container{
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+}
+.product_container ul{
+    padding-right: 100px;
+}
+.sale_class{
+    display: none;
+    position: absolute;
+    /*height: 300px;*/
+    width: 870px;
+    padding: 30px 18px;
+    text-align: center;
+    /*left: -250px;*/
+    top: 100%;
+    padding-top: 12px;
+    z-index: 9;
+}
+.sale_class ul{
+    display: flex;
+    justify-content: space-between;
+}
+.sale_class a {
+    display: inline-block;
+    padding-top: 15px;
+}
+.blogs_class{
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 100%;
+    padding-top: 12px;
+    z-index: 9;
+
+}
+.about_class{
+    display: none;
+    position: absolute;
+    width: 160px;
+    top: 100%;
+    padding-top: 12px;
+    z-index: 9;
+
+}
+
+/* .fon img{
+    width: 290px;
+    height: 400px;
+    
+}
+.sale_img{
+    margin-top: 40px;
+   
+} */
 
 .some_class li{
     padding-top: 20px; 
@@ -87,11 +153,29 @@ a {
     color:white;
 
 }
+.sale_class li a {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    transition: .1s linear;
+}
 .hover_menu li:hover .some_class{
      display: block;
      z-index: 1;
 }
 .hover_menu li:hover .product_class{
+    display: block;
+    z-index: 1;
+}
+.hover_menu li:hover .sale_class{
+    display: block;
+    z-index: 1;
+}
+.hover_menu li:hover .blogs_class {
+    display: block;
+    z-index: 1;
+}
+.hover_menu li:hover .about_class{
     display: block;
     z-index: 1;
 }
@@ -194,7 +278,12 @@ a {
 }
 
 .home-menu {
-    padding: 10px 25px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #4b4c6c;
+    font-weight: 500;
+    transition: .1s linear;
+    
 }
 .hover_menu  {
     display: flex;

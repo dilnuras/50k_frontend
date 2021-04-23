@@ -2,9 +2,15 @@
    * {
        box-sizing: border-box;
    }  
-   body,p {
-       margin: 0;
-   }
+   body {
+    margin: 0;
+    color: #4c4a6d;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+    p {
+        margin: 0;
+      }
 /*Конец базовых настроек страницы*/
 
 /*Универсальные стили*/
@@ -44,6 +50,7 @@
 .seryi{color: rgb(172, 170, 170);}
 a {
     text-decoration: none;
+    color: #4b4c6c;
 }
 
 .dropdown_menu{
@@ -191,7 +198,7 @@ a {
     background: #ffcc33;
 }
 .bg_green{
-    background: green;
+    background:#abcd02;;
 }
 .bg_blue{
     background: blue;
@@ -210,6 +217,7 @@ a {
      background-color: #f7f7f7;
      display: inline-block;
      width: 100%;
+     
  }
   .vm .ul_li i{
      margin-right: 10px;
@@ -217,6 +225,50 @@ a {
  .bo li:last-child{
      border-right: 0;
  }
+ .right li i:first-child {
+    padding-right: 10px;
+}
+
+.right li>a i {
+    color: #666;
+}
+
+.right li:nth-child(2) i:first-child {
+    padding-right: 5px;
+}
+
+.right li .fa-chevron-down {
+    font-size: 8px;
+}
+
+.right i {
+    font-size: 16px;
+}
+
+.right>li:last-child a {
+    text-decoration: underline;
+}
+
+.right li a:hover {
+    color: #4b4c6c;
+}
+
+.right li:first-child a:first-child:hover i,
+.right li:nth-child(2) a:first-child:hover i {
+    color: #e53556;
+}
+
+.right li:first-child .top__link a:hover .top__lang,
+.right li:nth-child(2) .top__link a:hover .top__curr {
+    color: #e53556;
+}
+
+.top__lang,
+.top__curr {
+    color: #666;
+    font-weight: 500;
+}
+
  .msg {
      position: absolute;
      top: -7px;
@@ -233,13 +285,52 @@ a {
  .icon_msg {
      position: relative;
  }
- /*strelka*/
+ .top__link {
+    position: relative;
+    display: inline-block;
+}
+
+.top__dropdown {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    left: -70px;
+    background-color: #fff;
+    box-shadow: 0px 5px 12px 0.12px rgb(0 0 0 / 10%);
+    z-index: 9;
+}
+
+.top__dropdown ul li {
+    transition: .1s linear;
+    cursor: pointer;
+}
+
+.top__dropdown ul li:hover a {
+    color: #66ccff;
+}
+
+.top__right li:first-child .top__dropdown ul li,
+.top__right li:nth-child(2) .top__dropdown ul li {
+    display: block;
+    width: 85px;
+    border-right: none;
+    margin: 15px;
+    padding: 0;
+}
+
+.top__hover:hover .top__dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
  
    /*centralnoe menu urok16*/
 .center_menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 128px;
 }
 .seryi_krug{
     background: #ececec;
@@ -287,19 +378,19 @@ a {
 }
 .hover_menu  {
     display: flex;
-    height: 68px;
+    height: 58px;
     justify-content: center;
     align-items:center ;
 }
 
 
 
-.search-box{
+ .search-box{
     background: #fff;
     border-radius: 25px;
     width: 300px;
    padding-left: 10px;
-   /*margin-top: -3px;*/
+  margin-top: -4px;
 }
 .search-home-1 {
     
@@ -324,15 +415,40 @@ form.search-form.select{
     font-size: 20px;
     padding-left: 50px;
 }
+
+
 /*product style*/
         .block_title{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f4f4f4;
+            margin: 35px 0 30px;
         }
         .product {
             display: inline-block;
             min-height:310px ;
+        }
+        .bg_green::before {
+            content: "";
+            position: absolute;
+            top: 19px;
+            left: 8px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #abcd02;
+            border-right: 8px solid transparent;
+        }
+        .bg_orange::before {
+            content: "";
+            position: absolute;
+            top: 19px;
+            left: 8px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #fdc140;
+            border-right: 8px solid transparent;
         }
         .product img {
             width: 200px;

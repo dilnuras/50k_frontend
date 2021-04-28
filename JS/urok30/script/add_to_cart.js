@@ -135,8 +135,20 @@ for (let key in arr) {
 
   
 }
-
+// Hw 29
+let product = ["New T shirt","Print Sweatshirt","Animal Sweatshirt"];
+let index;
+for (index=0; index<  product.length; ++index) {
+    console.log( product[index]);
+}
 // Hw 30
 // 1.Сделать функкоторая вычисляет длину окружности, радиус задает пользователь.
 // 2.Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b
  
+function min(a, b) {
+  if (a < b) {
+    return a;
+  } else {
+    return b;
+  }
+}

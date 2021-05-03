@@ -119,3 +119,7 @@ number.toString();
 
 let x = 9.56984;
 console.log(x.toFixed(2));
+
+//hw32
+let a = 1.2;
+console.log(a.toFixed(20));

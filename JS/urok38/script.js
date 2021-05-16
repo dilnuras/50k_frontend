@@ -1,60 +1,32 @@
 "use strict";
-      //Использование строгог режима для обработки данных
-    
-      //ООП понятие
-      //Применеие
-      //
-
-      //Как понять что есть строка
-
-
-      let car = {
-          kuzov: "jelezo",
-          kolesa: "4 koleca",
-          modal: function(){
-              console.log("Hello");
-          }
-      };
-
-    //   let mb = {
-    //       marka: "mers",
-    //       god: 1999
-    //   };
-
-    let mb =Object.create(car);
-    // mb.__proto__ = car;
-
-     //Object.setPrototypeOf(mb,car);
       
-
-    //  console.log(mb.modal);
-
-    //  mb.modal();
-
-
-
-    //Homework
-
-    let salary = {
-        almaz: 1200,
-        adilet: 1300,
-        nursultan: 3000
-       
-    };
-    
-    let bonus = {
-        almaz: 400,
-        adilet: 300,
-        nursultan: 200,
-    };
-    
-   let obj ={};
-Object.keys(salary ).forEach(function(a){
-  obj[a] = salary[a] +bonus[a];
-
-});
-console.log(obj);
     
     
+//Динамическая типизация
 
-     
+//console.log(String("text"));
+
+let resinput = +prompt("Введите нмер страницы?","");
+
+//https://miukid.com/cat/
+
+
+//console.log(resinput +10);
+//console.log("https://miukid.com/cat/" + resinput); cтарый метод
+
+console.log(`https://miukid.com/cat/${resinput}`); //новый метод
+
+
+
+function decimalToHexString(number)
+{
+  if (number < 0)
+  {
+    number = 0xFFFFFFFF + number + 1;
+  }
+
+  return number.toString(16).toUpperCase();
+}
+
+console.log(decimalToHexString(27));
+console.log(decimalToHexString(48.6));

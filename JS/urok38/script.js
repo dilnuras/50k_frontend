@@ -17,7 +17,7 @@ let resinput = +prompt("Введите нмер страницы?","");
 console.log(`https://miukid.com/cat/${resinput}`); //новый метод
 
 
-
+//
 function decimalToHexString(number)
 {
   if (number < 0)

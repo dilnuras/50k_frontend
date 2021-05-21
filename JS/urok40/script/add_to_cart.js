@@ -125,9 +125,9 @@ for (var i = 0; i < elements.length; i++) {
 // console.log(a.toFixed(20));
 
 //добавление товара в корзину
-let class_name = document.getElementsByClassName("add_cart");
+// let class_name = document.getElementsByClassName("add_cart");
 
-console.log(class_name);
+// console.log(class_name);
 
 var myfunction = function(evt) {
     evt.preventDefault();
@@ -188,7 +188,7 @@ function del_product(){
         this.parentNode.parentNode.remove();
 
         total_ptice();
-        
+
             }
 
             

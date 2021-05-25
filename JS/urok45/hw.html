@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            background: white; /* Цвет фона */
+            color: black; /* Цвет текста */
+        }
+    </style>
+    <script type="text/javascript">
+         function change_color(){
+            var select = document.getElementById('paint');
+            document.body.style.background = select.options[select.selectedIndex].value;
+        
+        
+        
+         }
+    </script>
+</head>
+<!-- Домашнее задание в 43 уроку
+
+
+сделать навигация для смены цвета заднего фона 
+навигация должно содержать три цвета 
+при нажатие на цвет в навигации задний цвет фона должна поменяться  
+ -->
+
+<body> 
+     <form> 
+        <p><font color="blue">Выбирите цвет фона страницы</font></p>
+         <select name="paint" id="paint"> 
+             <option value="yellow"> Желтый</option>
+             <option value="red"> Красный</option>
+             <option value="green"> Зеленый</option>
+         </select>
+        <p><input type="button" onclick="change_color()" value="Изменить цвет фона"/></p>
+     </form> 
+</body> 
+</html>

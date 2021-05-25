@@ -56,19 +56,21 @@
 
 // dilya.data_();
 
-// function helow(age) {
+function amantur(year) {
 
-// 	console.log(this);
-// 	console.log(this.name);
-// 	console.log(age);
-// }
+	console.log(this);
+	console.log(this.name);
+	console.log(year);
+	console.log(this.city);
+}
 
-// const newObj = {
-// 	name: "Dilya",
-// };
+const newObj = {
+	name: "Amantur",
+	city: "Bishkek"
+};
 
-// helow.call(newObj,26);
-// helow.apply(newObj,['26']);
+amantur.call(newObj,1988);
+// amantur.apply(newObj,['26']);
 
 // function count (num) {
 // 	return this+num;
@@ -85,16 +87,17 @@
 
 // });
 
-// let amantur= prompt('Ваши данные?');
 
-// function User(name, age){
-// 		this.names = name,
-// 		this.age = age,
-// 		this.data_ = function() {
-// 			console.log("heloo"+this.age);
-// 		};
-	
-// 	 }
+// function User(name, year,city){
+// 	this.names = name,
+// 	this.year =year,
+//     this.city = city
+
+// }
+
+// let amantur = new createUser("Amantur",3,Bishkek);
+
+// console.log (amantur.name);
 
 
 }()) ;     

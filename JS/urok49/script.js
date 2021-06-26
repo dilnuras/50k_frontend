@@ -17,8 +17,8 @@
 		request.addEventListener('load', () => {
 			
 			if(request.status === 200){
-				// console.log(request.response);
-				// console.log(JSON.parse(request.response));
+				console.log(request.response);
+				console.log(JSON.parse(request.response));
 
 				const currency = JSON.parse(request.response);
 
@@ -58,7 +58,7 @@
 			body: JSON.stringify({query: search.value})
 		})
 		.then(data => {
-			console.log(data);
+			// console.log(data);
 		});
 		
 		// const request_ = new XMLHttpRequest();

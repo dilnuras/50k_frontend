@@ -12,5 +12,8 @@
   "devDependencies": {
     "webpack": "^5.48.0",
     "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "script-runner": "^0.1.8"
   }
 }

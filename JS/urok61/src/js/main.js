@@ -1,10 +1,10 @@
 function myModule(){
     this.hello = function(){
-        console.log('Hello Dilya and D');
+        console.log('Hello Dilya and Dd');
     };
 
     this.bye = function(){
-        console.log('Bye Dilya and S');
+        console.log('Bye Dilya and Sd');
     };
 }
 
